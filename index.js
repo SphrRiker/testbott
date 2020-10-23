@@ -2,7 +2,7 @@
 const moment = require('jalali-moment');
 const Discord = require('discord.js');
 const chalk = require('chalk');
-const prefix = require('./Config.json');
+const { prefix,token } = require('./Config.json');
 const bot = new Discord.Client();
 
 //log in message
@@ -12,18 +12,23 @@ bot.once('ready', () => {
 
 
 //Status
+const activities_list = [
+    "Use cmd +link", 
+    "My Developer Is SPHR#1000"
+    ];
+
 bot.on('ready', () => {
-  setInterval(() => {
-      bot.user.setActivity(` ⏰ ${moment().locale('fa').format('HH : mm')}`);
-      
-      bot.user.setActivity("My Developer Is SPHR#1000");
-  }, 7000);
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+        bot.user.setActivity(activities_list[index]);
+    }, 5000);
 });
 
 
 
 
 
+//=======================================================================
 //commands
 bot.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
