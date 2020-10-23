@@ -1,0 +1,46 @@
+{
+  "name": "discord-clock",
+  "version": "1.0.0",
+  "description": "A simple clock script for your bot to show what time it is in your server | Made with discord.js and moment.js",
+  "author": "Favian Rizqulloh",
+  "contributors": [
+    ""
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "discord.js": "^12.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "jalali-moment": "^3.3.8",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
+    "ytdl-core": "^3.3.0"
+  },
+  "repository": {
+    "url": "https://github.com/favianrizqulloh/discord-clock"
+  },
+  "bugs": {
+    "url": "https://github.com/favianrizqulloh/discord-clock/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "discord",
+    "discord-bot",
+    "discord-clock-bot",
+    "discord-clock",
+    "discord-clock-widget",
+    "discord.js",
+    "discordjs",
+    "moment",
+    "moment.js",
+    "momentjs",
+    "moment-timezone"
+  ],
+  "devDependencies": {
+    "persian-date": "^1.1.0"
+  }
+}
